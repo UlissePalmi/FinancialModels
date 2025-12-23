@@ -19,13 +19,16 @@ sector_etfs = {
     "Information Technology": "XLK",
     "Utilities": "XLU",
     "Communication Services": "XLC",
-    "Real Estate": "XLRE"
+    "Real Estate": "XLRE",
+    "S&P 500": "SPY"
 }
 
 # ---------------------------
 # Download adjusted prices
 # ---------------------------
 tickers = list(sector_etfs.values())
+ 
+print(tickers)
 
 prices = yf.download(
     tickers,
