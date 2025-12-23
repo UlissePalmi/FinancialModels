@@ -1,0 +1,89 @@
+############################
+# Python / uv
+############################
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+############################
+# Packaging / build
+############################
+build/
+dist/
+*.egg-info/
+.eggs/
+
+############################
+# Jupyter / notebooks
+############################
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+############################
+# Logs / outputs
+############################
+*.log
+logs/
+outputs/
+results/
+checkpoints/
+runs/
+
+############################
+# Data (never commit raw data)
+############################
+data/
+datasets/
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+
+############################
+# Model artifacts
+############################
+models/
+weights/
+wandb/
+
+############################
+# OS / editor
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Editors / IDEs
+############################
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.nvim/
+.lazy/
+Session.vim
+
+############################
+# Env / secrets
+############################
+.env
+.env.*
+*.key
+*.pem
+*.secret
+
+############################
+# Temporary files
+############################
+tmp/
+temp/
+.cache/
+
