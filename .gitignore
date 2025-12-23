@@ -87,3 +87,6 @@ tmp/
 temp/
 .cache/
 
+
+*.csv
+

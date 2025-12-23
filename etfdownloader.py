@@ -23,6 +23,27 @@ sector_etfs = {
     "S&P 500": "SPY"
 }
 
+STATE_STREET_INDUSTRY_ETFS = {
+    "Aerospace & Defense": "XAR",
+    "Banks": "KBE",
+    "Biotechnology": "XBI",
+    "Capital Markets": "KCE",
+    "Health Care Equipment": "XHE",
+    "Health Care Services": "XHS",
+    "Homebuilders": "XHB",
+    "Insurance": "KIE",
+    "Metals & Mining": "XME",
+    "Oil & Gas Equipment & Services": "XES",
+    "Oil & Gas Exploration & Production": "XOP",
+    "Pharmaceuticals": "XPH",
+    "Regional Banks": "KRE",
+    "Retail": "XRT",
+    "Semiconductors": "XSD",
+    "Software & Services": "XSW",
+    "Telecom": "XTL",
+    "Transportation": "XTN"   # State Street® SPDR® S&P® Transportation ETF
+}
+
 # ---------------------------
 # Download adjusted prices
 # ---------------------------
@@ -58,6 +79,6 @@ annual_returns = annual_returns.dropna(how="all")
 # ---------------------------
 # Optional: save output
 # ---------------------------
-annual_returns.to_csv("gics_sector_returns_etf_proxy.csv")
+annual_returns.to_csv("etf_returns.csv")
 
 print(annual_returns.head())
